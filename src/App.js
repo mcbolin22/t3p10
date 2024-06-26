@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import React from 'react';
+import PokemonCard from './components/PokemonCard';
 
 // number of cards to render = 6
 // use state to store data with classes
@@ -50,7 +51,7 @@ class App extends React.Component {
         Array(this.state.numberOfPokemonToShow)
         .fill(null)
         .map((element, index) => { 
-          return <h1>{index}</h1>
+          return <PokemonCard />
           })
         }
       </div>
